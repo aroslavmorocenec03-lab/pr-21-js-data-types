@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практична №21 — Типи даних JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Практична робота №21</p>
+      <h1>Типи даних та області видимості в JavaScript</h1>
+      <p>Перетворення типів і розрахунок вартості замовлення з ПДВ.</p>
+      <p>Відкрийте інструменти розробника (<kbd>F12</kbd>), виберіть <strong>Console</strong> та перезавантажте сторінку, щоб побачити результати виконання коду.</p>
+    </header>
+
+    <section aria-labelledby="types-heading">
+      <h2 id="types-heading">1. Перетворення типів</h2>
+      <p>Значення в таблиці обчислює скрипт під час відкриття сторінки. Лапки позначають рядковий результат.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Вираз</th><th scope="col">Результат</th><th scope="col">typeof</th></tr></thead>
+          <tbody id="types-results"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="order-heading">
+      <h2 id="order-heading">2. Вартість замовлення та ПДВ</h2>
+      <p>Ціни вказано без ПДВ. Для всіх товарів застосовано навчальну ставку <strong>20%</strong>; податок додається до вартості позиції.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Товар</th><th scope="col">Ціна, грн</th><th scope="col">Кількість</th><th scope="col">Без ПДВ, грн</th><th scope="col">ПДВ, грн</th><th scope="col">Разом, грн</th></tr></thead>
+          <tbody id="order-results"></tbody>
+        </table>
+      </div>
+      <p class="total">Загальна вартість із ПДВ: <strong id="order-total"></strong></p>
+      <h3>Масив результатів розрахунку ПДВ</h3>
+      <pre id="vat-results"></pre>
+    </section>
+    <footer>Пояснення результатів, областей видимості та відповіді на контрольні запитання містяться в README.md.</footer>
+    <noscript>Для виконання практичної увімкніть JavaScript у браузері.</noscript>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
